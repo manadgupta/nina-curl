@@ -1,0 +1,506 @@
+{
+  "8191ffac-6ce7-4c5a-bb43-15a6fe76ab3b": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/8191ffac-6ce7-4c5a-bb43-15a6fe76ab3b/audio.mp3",
+        "format": "mp3",
+        "bytes": 7132948,
+        "track_number": 1,
+        "track_title": "Shine"
+      }
+    ],
+    "audio_bytes": 7132948,
+    "cover_path": "releases/8191ffac-6ce7-4c5a-bb43-15a6fe76ab3b/cover.jpg"
+  },
+  "1f36ac46-853e-4f34-b23a-e00dae17a27d": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/1f36ac46-853e-4f34-b23a-e00dae17a27d/audio.mp3",
+        "format": "mp3",
+        "bytes": 12955451,
+        "track_number": 1,
+        "track_title": "Le Petit Chou - Midnight Reverie"
+      }
+    ],
+    "audio_bytes": 12955451,
+    "cover_path": "releases/1f36ac46-853e-4f34-b23a-e00dae17a27d/cover.jpg"
+  },
+  "59e9270c-2176-47bf-be48-f059c2b7be99": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/59e9270c-2176-47bf-be48-f059c2b7be99/track_01_star_in_my_heart_feat_mp3girl000.mp3",
+        "format": "mp3",
+        "bytes": 3571832,
+        "track_number": 1,
+        "track_title": "star in my heart (feat. mp3girl000)"
+      },
+      {
+        "path": "releases/59e9270c-2176-47bf-be48-f059c2b7be99/track_02_street_lights_r_stars.mp3",
+        "format": "mp3",
+        "bytes": 4347200,
+        "track_number": 2,
+        "track_title": "street lights r stars"
+      },
+      {
+        "path": "releases/59e9270c-2176-47bf-be48-f059c2b7be99/track_03_bl_ck_st_r_afrosurrealist_rework.mp3",
+        "format": "mp3",
+        "bytes": 4802394,
+        "track_number": 3,
+        "track_title": "bl\u2605ck st\u2605r (afrosurrealist rework)"
+      }
+    ],
+    "audio_bytes": 12721426,
+    "cover_path": "releases/59e9270c-2176-47bf-be48-f059c2b7be99/cover.png"
+  },
+  "854cda06-36b0-4264-8c5f-d9456d3b3e5c": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/854cda06-36b0-4264-8c5f-d9456d3b3e5c/audio.mp3",
+        "format": "mp3",
+        "bytes": 16097787,
+        "track_number": 1,
+        "track_title": "SOD Sessions"
+      }
+    ],
+    "audio_bytes": 16097787,
+    "cover_path": "releases/854cda06-36b0-4264-8c5f-d9456d3b3e5c/cover.jpg"
+  },
+  "173b4512-429d-47c6-bbc3-5f20c99448c5": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/173b4512-429d-47c6-bbc3-5f20c99448c5/audio.mp3",
+        "format": "mp3",
+        "bytes": 20671259,
+        "track_number": 1,
+        "track_title": "Juan Reyes - to keep the spiders out"
+      }
+    ],
+    "audio_bytes": 20671259,
+    "cover_path": "releases/173b4512-429d-47c6-bbc3-5f20c99448c5/cover.png"
+  },
+  "de030fbf-4d31-41ed-bb76-c2e3b6ef761e": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/de030fbf-4d31-41ed-bb76-c2e3b6ef761e/track_01_interlocking.mp3",
+        "format": "mp3",
+        "bytes": 10227051,
+        "track_number": 1,
+        "track_title": "Interlocking"
+      },
+      {
+        "path": "releases/de030fbf-4d31-41ed-bb76-c2e3b6ef761e/track_02_codex_sybaris.mp3",
+        "format": "mp3",
+        "bytes": 11932971,
+        "track_number": 2,
+        "track_title": "Codex Sybaris"
+      },
+      {
+        "path": "releases/de030fbf-4d31-41ed-bb76-c2e3b6ef761e/track_03_tempistica_metronomica.mp3",
+        "format": "mp3",
+        "bytes": 9759531,
+        "track_number": 3,
+        "track_title": "Tempistica Metronomica"
+      },
+      {
+        "path": "releases/de030fbf-4d31-41ed-bb76-c2e3b6ef761e/track_04_concate_nations.mp3",
+        "format": "mp3",
+        "bytes": 12796011,
+        "track_number": 4,
+        "track_title": "Concate\u0301nations"
+      },
+      {
+        "path": "releases/de030fbf-4d31-41ed-bb76-c2e3b6ef761e/track_05_endnotes.mp3",
+        "format": "mp3",
+        "bytes": 6404331,
+        "track_number": 5,
+        "track_title": "Endnotes"
+      }
+    ],
+    "audio_bytes": 51119895,
+    "cover_path": "releases/de030fbf-4d31-41ed-bb76-c2e3b6ef761e/cover.jpg"
+  },
+  "6abfeae2-87cd-4472-af86-0a87c12db4ef": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_01_8_x_8.mp3",
+        "format": "mp3",
+        "bytes": 3586132,
+        "track_number": 1,
+        "track_title": "8 X 8"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_02_ammo.mp3",
+        "format": "mp3",
+        "bytes": 3469104,
+        "track_number": 2,
+        "track_title": "Ammo"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_03_bless.mp3",
+        "format": "mp3",
+        "bytes": 2856794,
+        "track_number": 3,
+        "track_title": "Bless"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_04_blueberry.mp3",
+        "format": "mp3",
+        "bytes": 2762753,
+        "track_number": 4,
+        "track_title": "Blueberry"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_05_fresh_start.mp3",
+        "format": "mp3",
+        "bytes": 2981137,
+        "track_number": 5,
+        "track_title": "Fresh Start"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_06_lie.mp3",
+        "format": "mp3",
+        "bytes": 3611210,
+        "track_number": 6,
+        "track_title": "Lie"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_07_hypnautical.mp3",
+        "format": "mp3",
+        "bytes": 3886018,
+        "track_number": 7,
+        "track_title": "HYPNAUTICAL"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_08_in_tha_palace.mp3",
+        "format": "mp3",
+        "bytes": 2924712,
+        "track_number": 8,
+        "track_title": "In Tha Palace"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_09_land_of_the_fees.mp3",
+        "format": "mp3",
+        "bytes": 3704206,
+        "track_number": 9,
+        "track_title": "Land of the Fees"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_10_hidden.mp3",
+        "format": "mp3",
+        "bytes": 3842132,
+        "track_number": 10,
+        "track_title": "Hidden"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_11_mid_evil.mp3",
+        "format": "mp3",
+        "bytes": 3191161,
+        "track_number": 11,
+        "track_title": "Mid Evil"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_12_norf_souf.mp3",
+        "format": "mp3",
+        "bytes": 3305055,
+        "track_number": 12,
+        "track_title": "Norf Souf"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_13_reborn.mp3",
+        "format": "mp3",
+        "bytes": 3493137,
+        "track_number": 13,
+        "track_title": "REBORN"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_14_slumba_parti.mp3",
+        "format": "mp3",
+        "bytes": 3667635,
+        "track_number": 14,
+        "track_title": "Slumba Parti"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_15_sunshine_daydream.mp3",
+        "format": "mp3",
+        "bytes": 4305022,
+        "track_number": 15,
+        "track_title": "Sunshine Daydream"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_16_the_long_con.mp3",
+        "format": "mp3",
+        "bytes": 3770035,
+        "track_number": 16,
+        "track_title": "The Long Con"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_17_within.mp3",
+        "format": "mp3",
+        "bytes": 3049055,
+        "track_number": 17,
+        "track_title": "Within"
+      },
+      {
+        "path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/track_18_ww3.mp3",
+        "format": "mp3",
+        "bytes": 3317594,
+        "track_number": 18,
+        "track_title": "WW3"
+      }
+    ],
+    "audio_bytes": 61722892,
+    "cover_path": "releases/6abfeae2-87cd-4472-af86-0a87c12db4ef/cover.jpg"
+  },
+  "87887b3d-abb5-45a8-8213-ad64eb3d1d2d": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_01_bye_bye.mp3",
+        "format": "mp3",
+        "bytes": 5193644,
+        "track_number": 1,
+        "track_title": "bye bye"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_02_top_of_the_candle.mp3",
+        "format": "mp3",
+        "bytes": 6743084,
+        "track_number": 2,
+        "track_title": "top of the candle"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_03_i_might_not_wave.mp3",
+        "format": "mp3",
+        "bytes": 6109484,
+        "track_number": 3,
+        "track_title": "i might not wave"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_04_start_running.mp3",
+        "format": "mp3",
+        "bytes": 5649644,
+        "track_number": 4,
+        "track_title": "start running"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_05_guitarfreestyle.mp3",
+        "format": "mp3",
+        "bytes": 6859244,
+        "track_number": 5,
+        "track_title": "guitarfreestyle"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_06_one.mp3",
+        "format": "mp3",
+        "bytes": 4037804,
+        "track_number": 6,
+        "track_title": "one"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_07_much.mp3",
+        "format": "mp3",
+        "bytes": 7906604,
+        "track_number": 7,
+        "track_title": "much"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_08_no_use.mp3",
+        "format": "mp3",
+        "bytes": 6860204,
+        "track_number": 8,
+        "track_title": "no use"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_09_how_can_good_friends_become_the_fakest.mp3",
+        "format": "mp3",
+        "bytes": 6558764,
+        "track_number": 9,
+        "track_title": "how can good friends become the fakest"
+      },
+      {
+        "path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/track_10_best_i_ever_had.mp3",
+        "format": "mp3",
+        "bytes": 9967724,
+        "track_number": 10,
+        "track_title": "best i ever had"
+      }
+    ],
+    "audio_bytes": 65886200,
+    "cover_path": "releases/87887b3d-abb5-45a8-8213-ad64eb3d1d2d/cover.png"
+  },
+  "14b18fd3-6502-46d2-b3db-bb0a694c0264": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_01_campanilleros.mp3",
+        "format": "mp3",
+        "bytes": 13147192,
+        "track_number": 1,
+        "track_title": "Campanilleros"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_02_action_park_sargent.mp3",
+        "format": "mp3",
+        "bytes": 6423267,
+        "track_number": 2,
+        "track_title": "Action Park Sargent"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_03_action_park_2_no_plores.mp3",
+        "format": "mp3",
+        "bytes": 5359568,
+        "track_number": 3,
+        "track_title": "Action Park #2 [ no plores ]"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_04_tottenham_father.mp3",
+        "format": "mp3",
+        "bytes": 7057528,
+        "track_number": 4,
+        "track_title": "Tottenham father"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_05_red_red_ribbon.mp3",
+        "format": "mp3",
+        "bytes": 3630262,
+        "track_number": 5,
+        "track_title": "red red ribbon"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_06_top_of_duboce_tyne_bridge_crossing.mp3",
+        "format": "mp3",
+        "bytes": 20392515,
+        "track_number": 6,
+        "track_title": "Top of Duboce / Tyne Bridge Crossing"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_07_rachel_antonia.mp3",
+        "format": "mp3",
+        "bytes": 8823405,
+        "track_number": 7,
+        "track_title": "Rachel & Antonia"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_08_sirenes.mp3",
+        "format": "mp3",
+        "bytes": 20327732,
+        "track_number": 8,
+        "track_title": "Sirenes"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_09_mockingbirds_for_d_k_l.mp3",
+        "format": "mp3",
+        "bytes": 4684564,
+        "track_number": 9,
+        "track_title": "Mockingbirds for D.K.L."
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_10_ca\u00e7ar_un_ull.mp3",
+        "format": "mp3",
+        "bytes": 9386606,
+        "track_number": 10,
+        "track_title": "ca\u00e7ar un ull"
+      },
+      {
+        "path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/track_11_la_invitaci\u00f3_de_l_anguila.mp3",
+        "format": "mp3",
+        "bytes": 5494361,
+        "track_number": 11,
+        "track_title": "La invitaci\u00f3 de l\u2019anguila"
+      }
+    ],
+    "audio_bytes": 104727000,
+    "cover_path": "releases/14b18fd3-6502-46d2-b3db-bb0a694c0264/cover.jpg"
+  },
+  "f9f120a9-fd8a-4d13-9e42-5a6f617a64de": {
+    "status": "done",
+    "tracks": [
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_01_ode_to_big_hungry_below_the_fall_mix.mp3",
+        "format": "mp3",
+        "bytes": 9016467,
+        "track_number": 1,
+        "track_title": "ode to big hungry (below the fall mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_02_bliss_loblolly_mix.mp3",
+        "format": "mp3",
+        "bytes": 15740386,
+        "track_number": 2,
+        "track_title": "bliss (loblolly mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_03_recalibrating.mp3",
+        "format": "mp3",
+        "bytes": 11574377,
+        "track_number": 3,
+        "track_title": "recalibrating "
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_04_the_wringing_victory_day_mix.mp3",
+        "format": "mp3",
+        "bytes": 7628843,
+        "track_number": 4,
+        "track_title": "the wringing (victory day mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_05_start_to_pray_fast_n_loose_mix.mp3",
+        "format": "mp3",
+        "bytes": 11800075,
+        "track_number": 5,
+        "track_title": "start to pray (fast-n-loose mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_06_kontombl\u00e9.mp3",
+        "format": "mp3",
+        "bytes": 12494932,
+        "track_number": 6,
+        "track_title": "kontombl\u00e9"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_07_the_wringing_battle_mix.mp3",
+        "format": "mp3",
+        "bytes": 12896173,
+        "track_number": 7,
+        "track_title": "the wringing (battle mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_08_recalibrating_in_the_mi_d_st_mix.mp3",
+        "format": "mp3",
+        "bytes": 10166900,
+        "track_number": 8,
+        "track_title": "recalibrating (in the mi[d]st mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_09_ode_to_big_hungry_above_the_fall_mix.mp3",
+        "format": "mp3",
+        "bytes": 13086345,
+        "track_number": 9,
+        "track_title": "ode to big hungry (above the fall mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_10_start_to_pray_tight_n_slow_mix.mp3",
+        "format": "mp3",
+        "bytes": 9233806,
+        "track_number": 10,
+        "track_title": "start to pray (tight-n-slow mix)"
+      },
+      {
+        "path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/track_11_unhinged_living.mp3",
+        "format": "mp3",
+        "bytes": 13152173,
+        "track_number": 11,
+        "track_title": "unhinged living"
+      }
+    ],
+    "audio_bytes": 126790477,
+    "cover_path": "releases/f9f120a9-fd8a-4d13-9e42-5a6f617a64de/cover.png"
+  }
+}

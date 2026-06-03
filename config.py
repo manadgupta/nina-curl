@@ -6,7 +6,7 @@ Override any of these with environment variables of the same name, e.g.:
 import os
 from pathlib import Path
 
-API_BASE = os.environ.get("NINA_API_BASE", "https://api.ninaprotocol.com/v1")
+API_BASE = os.environ.get("NINA_API_BASE", "https://services.ninaprotocol.com/v1")
 
 ARWEAVE_GATEWAYS = os.environ.get(
     "NINA_ARWEAVE_GATEWAYS",
@@ -26,7 +26,8 @@ MAX_RETRIES = int(os.environ.get("NINA_RETRIES", "5"))
 
 USER_AGENT = os.environ.get(
     "NINA_USER_AGENT",
-    "downina/0.1 (personal archive; +https://github.com/yourname/downina)",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
 )
 
 # Audio format preference: first match wins. Lowercase extensions, no dot.

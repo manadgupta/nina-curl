@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 # One-shot driver for downina. Run from inside the downina/ directory:
-#   ./run.sh setup       # create venv + install deps (run once)
-#   ./run.sh probe       # step 1: verify API
-#   ./run.sh enumerate   # step 2: build index.json
-#   ./run.sh smoke       # step 3: download 10 releases
-#   ./run.sh download    # step 4: full download (resumable)
-#   ./run.sh retry       # re-attempt anything in failures.log
-#   ./run.sh status      # show counts + disk usage
-#   ./run.sh all         # setup -> probe -> enumerate -> smoke (pauses for ok before full)
+#   ./run.sh setup              # create venv + install deps (run once)
+#   ./run.sh probe              # step 1: verify API
+#   ./run.sh enumerate          # step 2 (API path): build index.json
+#   ./run.sh enumerate-browser  # step 2 (browser path): use Playwright when API is blocked
+#   ./run.sh smoke              # step 3: download 10 releases
+#   ./run.sh download           # step 4: full download (resumable)
+#   ./run.sh retry              # re-attempt anything in failures.log
+#   ./run.sh status             # show counts + disk usage
+#   ./run.sh all                # setup -> probe -> enumerate -> smoke (pauses for ok before full)
 
 set -euo pipefail
 
@@ -35,6 +36,8 @@ cmd_setup() {
     log "installing requirements"
     "$PIP" install --upgrade pip >/dev/null
     "$PIP" install -r requirements.txt
+    log "installing playwright Chromium (~150 MB)"
+    "$VENV/bin/playwright" install chromium
     log "setup done"
 }
 
@@ -46,8 +49,14 @@ cmd_probe() {
 
 cmd_enumerate() {
     ensure_venv
-    log "enumerating all releases (this takes 1-2 hours)"
+    log "enumerating all releases via API (this takes 1-2 hours)"
     "$PY" enumerate.py
+}
+
+cmd_enumerate_browser() {
+    ensure_venv
+    log "enumerating via headless browser (use this when the API is blocked)"
+    "$PY" enumerate_browser.py "$@"
 }
 
 cmd_smoke() {
@@ -107,13 +116,14 @@ usage() {
 }
 
 case "${1:-}" in
-    setup)     cmd_setup ;;
-    probe)     cmd_probe ;;
-    enumerate) cmd_enumerate ;;
-    smoke)     cmd_smoke ;;
-    download)  cmd_download ;;
-    retry)     cmd_retry ;;
-    status)    cmd_status ;;
-    all)       cmd_all ;;
-    *)         usage ;;
+    setup)             cmd_setup ;;
+    probe)             cmd_probe ;;
+    enumerate)         cmd_enumerate ;;
+    enumerate-browser) shift; cmd_enumerate_browser "$@" ;;
+    smoke)             cmd_smoke ;;
+    download)          cmd_download ;;
+    retry)             cmd_retry ;;
+    status)            cmd_status ;;
+    all)               cmd_all ;;
+    *)                 usage ;;
 esac

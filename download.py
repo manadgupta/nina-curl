@@ -18,7 +18,7 @@ from pathlib import Path
 from tqdm import tqdm
 
 import config
-from extract import pick_preferred_audio
+from extract import pick_preferred_audio_per_track
 from nina_api import NinaSession, arweave_url, guess_extension
 
 
@@ -68,10 +68,16 @@ def main() -> int:
             bar.update(1)
     bar.close()
 
-    done = sum(1 for v in progress.values() if v.get("status") == "done")
-    failed = sum(1 for v in progress.values() if v.get("status") == "failed")
-    print(f"\nDone: {done}   Failed: {failed}   See {config.FAILURES_PATH} for failure details.")
-    print("Re-run anytime to resume.  Use --retry-failed to retry failures.")
+    final = _load_progress()  # reload — workers updated the file, our local copy is stale
+    done = sum(1 for v in final.values() if v.get("status") == "done")
+    failed = sum(1 for v in final.values() if v.get("status") == "failed")
+    tracks = sum(len(v.get("tracks", [])) for v in final.values() if v.get("status") == "done")
+    bytes_total = sum(v.get("audio_bytes", 0) for v in final.values() if v.get("status") == "done")
+    gb = bytes_total / (1024 ** 3)
+    print(f"\nDone: {done}   Failed: {failed}   Tracks: {tracks}   Audio size: {gb:.2f} GB")
+    if failed:
+        print(f"See {config.FAILURES_PATH} for failure details.  Retry with: ./run.sh retry")
+    print("Re-run anytime to resume.")
     return 0
 
 
@@ -92,26 +98,49 @@ def _download_one(session: NinaSession, release: dict) -> dict:
         if not cover_path.exists() or cover_path.stat().st_size == 0:
             _stream_with_gateway_fallback(session, art_uri, cover_path)
 
-    # 3. audio (preferred format; required)
-    audio = pick_preferred_audio(release.get("audio_files") or [])
-    if not audio:
+    # 3. audio — one file per track. Multi-track releases get track_NN_<name>.<ext>;
+    #    single-track releases get audio.<ext> for backward compatibility.
+    tracks = pick_preferred_audio_per_track(release.get("audio_files") or [])
+    if not tracks:
         return {"status": "failed", "error": "no audio file in metadata"}
 
-    audio_uri = audio["uri"]
-    ext = guess_extension(audio_uri, mime=audio.get("type"))
-    audio_path = rdir / f"audio.{ext}"
-    if not audio_path.exists() or audio_path.stat().st_size == 0:
-        bytes_written = _stream_with_gateway_fallback(session, audio_uri, audio_path)
-    else:
-        bytes_written = audio_path.stat().st_size
+    track_results = []
+    total_bytes = 0
+    for t in tracks:
+        ext = guess_extension(t["uri"], mime=t.get("type"))
+        if len(tracks) == 1:
+            fname = f"audio.{ext}"
+        else:
+            tnum = t.get("track_number") or 0
+            slug = _track_slug(t.get("track_title") or "")
+            fname = f"track_{tnum:02d}{('_' + slug) if slug else ''}.{ext}"
+        out_path = rdir / fname
+        if not out_path.exists() or out_path.stat().st_size == 0:
+            written = _stream_with_gateway_fallback(session, t["uri"], out_path)
+        else:
+            written = out_path.stat().st_size
+        track_results.append({
+            "path": str(out_path.relative_to(config.ROOT)),
+            "format": ext,
+            "bytes": written,
+            "track_number": t.get("track_number"),
+            "track_title": t.get("track_title"),
+        })
+        total_bytes += written
 
     return {
         "status": "done",
-        "audio_path": str(audio_path.relative_to(config.ROOT)),
-        "audio_format": ext,
-        "audio_bytes": bytes_written,
+        "tracks": track_results,
+        "audio_bytes": total_bytes,
         "cover_path": str(cover_path.relative_to(config.ROOT)) if cover_path else None,
     }
+
+
+def _track_slug(s: str, max_len: int = 40) -> str:
+    out = "".join(c if c.isalnum() else "_" for c in s.lower()).strip("_")
+    while "__" in out:
+        out = out.replace("__", "_")
+    return out[:max_len]
 
 
 def _stream_with_gateway_fallback(session: NinaSession, uri: str, dest: Path) -> int:
