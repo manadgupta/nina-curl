@@ -31,6 +31,28 @@ confirm() {
 }
 
 cmd_setup() {
+    if ! command -v python3 >/dev/null 2>&1; then
+        echo "ERROR: python3 is not installed."
+        echo ""
+        echo "Install it first, then re-run this script:"
+        case "$(uname -s)" in
+            Darwin)  echo "  brew install python@3.11    # or download from https://www.python.org/downloads/" ;;
+            Linux)   echo "  sudo apt install python3 python3-venv    # Debian/Ubuntu"
+                     echo "  sudo dnf install python3                 # Fedora/RHEL" ;;
+            *)       echo "  https://www.python.org/downloads/" ;;
+        esac
+        exit 1
+    fi
+
+    pyver=$(python3 -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')
+    pymajor=$(python3 -c 'import sys; print(sys.version_info.major)')
+    pyminor=$(python3 -c 'import sys; print(sys.version_info.minor)')
+    if [ "$pymajor" -lt 3 ] || { [ "$pymajor" -eq 3 ] && [ "$pyminor" -lt 9 ]; }; then
+        echo "ERROR: python3 is $pyver — need 3.9 or newer."
+        exit 1
+    fi
+    echo "Using python3 $pyver"
+
     log "creating venv at $VENV"
     python3 -m venv "$VENV"
     log "installing requirements"

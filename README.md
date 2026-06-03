@@ -40,6 +40,16 @@ point `NINA_ARCHIVE_ROOT` at an external drive.
 Audio format preference: `mp3 > mp4 > m4a > aac > ogg > opus > wav > flac`.
 WAV is only used when no MP3 exists for that track.
 
+## Prerequisites
+
+- **Python 3.9+** (`python3 --version` to check). If missing:
+  - macOS: `brew install python@3.11`  *(or download the installer from [python.org](https://www.python.org/downloads/))*
+  - Ubuntu/Debian: `sudo apt install python3 python3-venv`
+  - Fedora/RHEL: `sudo dnf install python3`
+  - Windows: download the installer from [python.org](https://www.python.org/downloads/) and check "Add Python to PATH"
+- **`bash`** (any modern Mac/Linux shell — on Windows use Git Bash or WSL)
+- **~2 TB free disk** (point `NINA_ARCHIVE_ROOT` at an external drive)
+
 ## Setup (one-time, on the machine doing the downloads)
 
 ```bash
@@ -47,8 +57,8 @@ cd downina
 ./run.sh setup
 ```
 
-Creates a Python venv, installs deps, and downloads a Chromium for the
-fallback browser enumerator (~150 MB). Requires Python 3.9+.
+`./run.sh setup` checks Python is installed, then creates a venv, installs
+deps, and downloads a Chromium for the fallback browser enumerator (~150 MB).
 
 ## Run
 
